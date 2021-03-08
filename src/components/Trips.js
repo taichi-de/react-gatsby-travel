@@ -29,11 +29,10 @@ const Trips = ({ heading }) => {
 
   function getTrips(data) {
     const tripsArray = []
-    data.allTripsJson.forEach((item, index) => {
+    data.allTripsJson.edges.forEach((item, index) => {
       tripsArray.push(
         <ProductCard kex={index}>
           <ProductImg
-            src={item.node.img.childImageSharp.fluid.src}
             alt={item.node.alt}
             fluid={item.node.img.childImageSharp.fluid}
           />
