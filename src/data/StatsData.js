@@ -1,12 +1,12 @@
 import React from "react"
-import { GiEarthamerica } from "react-icons/gi"
+import { GiEarthAmerica } from "react-icons/gi"
 import { FaMoneyCheck } from "react-icons/fa"
 import { MdAirplanemodeActive, MdTimer } from "react-icons/md"
 
 export const StatsData = [
   {
     icon: (
-      <GiEarthamerica
+      <GiEarthAmerica
         css={`
           color: #047bf1;
         `}
