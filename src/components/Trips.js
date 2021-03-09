@@ -49,6 +49,7 @@ const Trips = ({ heading }) => {
             css={`
               position: absolute;
               top: 420px;
+              left: 10%;
               font-size: 14px;
             `}
           >
@@ -89,7 +90,7 @@ const ProductsWrapper = styled.div`
   justify-content: center;
   padding: 0 2rem;
   @media screen and (max-width: 1200px) {
-    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-columns: 1fr, 1fr;
   }
   @media screen and (max-width: 868px) {
     grid-template-columns: 1fr;
@@ -106,7 +107,7 @@ const ProductCard = styled.div`
 const ProductImg = styled(Img)`
   height: 100%;
   max-width: 100%;
-  position: relative;
+  position: absolute;
   border-radius: 10px;
   filter: brightness(70%);
   transition: 0.4s cubic-bezier(0.075, 0.02, 0.165, 1);

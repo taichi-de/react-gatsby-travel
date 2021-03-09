@@ -9,9 +9,10 @@ export const Button = styled(Link)`
   font-size: ${({ big }) => (big ? "20px" : "16px")};
   outline: none;
   border: none;
+  min-width: 100px;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s !important;
   border-radius: ${({ round }) => (round ? "50px" : "none")};
   &:hover {
     background: ${({ primary }) => (primary ? "#077BF1" : "#F26A3E")};

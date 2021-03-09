@@ -31,7 +31,7 @@ const Nav = styled.nav`
   background: transparent;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
   position: relative;
@@ -55,7 +55,7 @@ const Bars = styled(FaBars)`
     position: absolute;
     top: 0;
     right: 0;
-    /* transform: translate(-100%, 75%); */
+    transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
   }
